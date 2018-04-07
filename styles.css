@@ -1,0 +1,99 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    background: lightslategray;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 70%;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.expand {
+    background-color: lightslategray;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20pt;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.subbut {
+    background-color: white;
+    border: solid lightslategray 4px;
+    color: black;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 15%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20pt;
+    cursor: pointer;
+}
+
+.question {
+    font-size: 22pt;
+}
+
+.container {
+    display: block;
+    position: relative;
+    font-size: 20pt;
+    padding-left: 2.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    font-size: 30pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radiobut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: white;
+    border: solid lightslategray 2px;
+    border-radius: 50%;
+}
+
+.container:hover input~.radiobut {
+    background-color: #ccc;
+}
+
+.container input:checked~.radiobut {
+    background-color: lightslategray;
+}

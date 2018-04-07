@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en"> 
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Simple Quiz Template Example made with pure Javascript">
+    <title>Political Idealogy</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Political Values</h1>
+        <button class="expand">Tips</button>
+            <div class="panel">
+                <p>
+                    Try your best!
+                </p>
+            </div>
+        <form id="quiz" name="quiz">
+
+            <h2>Healthcare</h2>
+
+            <p class="question">Is healthcare a human right?</p>
+            <label class="container">Yes
+                <input type="radio" name="health1" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="health1" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">Which of the following healthcare systems would you most support?</p>
+            <label class="container">Single Payer
+                <input type="radio" name="healthsys" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">Heavily regulated and subsidized private insurance
+                <input type="radio" name="healthsys" value="B">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">Private Insurance with a public option
+                <input type="radio" name="healthsys" value="C">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">Only private insurance
+                <input type="radio" name="healthsys" value="D">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">Other
+                <input type="radio" name="healthsys" value="E">
+                <span class="radiobut"></span>
+            </label>
+
+            <h2>Economics</h2>
+
+            <p class="question">Do you support free trade?</p>
+            <label class="container">Yes
+                <input type="radio" name="freetrade" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="freetrade" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">Does the market make better decisions for citizens than a central planner? </p>
+            <label class="container">Always
+                <input type="radio" name="markets" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">Usually
+                <input type="radio" name="markets" value="B">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">Occasionally 
+                <input type="radio" name="markets" value="C">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">Never
+                <input type="radio" name="markets" value="D">
+                <span class="radiobut"></span>
+            </label>            
+
+            <p class="question">Do you support a carbon tax?</p>
+            <label class="container">Yes
+                <input type="radio" name="carbon" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="carbon" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">In general, corporate taxes should be: </p>
+            <label class="container">As high as feasible
+                <input type="radio" name="corp" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">As low as feasible
+                <input type="radio" name="corp" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">Do you support a Universal Basic Income?</p>
+            <label class="container">Yes
+                <input type="radio" name="ubi" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="ubi" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <h2>Society</h2>
+
+            <p class="question">Do you support gay marriage?</p>
+            <label class="container">Yes
+                <input type="radio" name="gaym" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="gaym" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">Do you support some degree of affirmative action?</p>
+            <label class="container">Yes
+                <input type="radio" name="affa" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="affa" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">Would you prefer more immigration or less?</p>
+            <label class="container">More
+                <input type="radio" name="immig" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">Less
+                <input type="radio" name="immig" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">Would you like open borders?</p>
+            <label class="container">Yes
+                <input type="radio" name="openbor" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="openbor" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">Do you believe GMOs are harmful?</p>
+            <label class="container">Yes
+                <input type="radio" name="gmo" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="gmo" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">Do you believe vaccinations are harmful?</p>
+            <label class="container">Yes
+                <input type="radio" name="vacc" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="vacc" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">Should police be allowed target groups who have higher rates of crime?</p>
+            <label class="container">Yes
+                <input type="radio" name="police" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="police" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+            <p class="question">Do you support freedom of speech?</p>
+            <label class="container">Yes
+                <input type="radio" name="speech" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="speech" value="B">
+                <span class="radiobut"></span>
+            </label>
+
+
+            <input type="button" id="submitbtn" class="subbut" value="Submit">
+        </form>
+        <div id="showResults">
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<!-- prototype question 
+
+        <p class="question">Do you support a VAT?</p>
+            <label class="container">Yes
+                <input type="radio" name="quest1" value="A">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">No
+                <input type="radio" name="quest1" value="B">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">Three
+                <input type="radio" name="quest1" value="C">
+                <span class="radiobut"></span>
+            </label>
+            <label class="container">Four
+                <input type="radio" name="quest1" value="D">
+                <span class="radiobut"></span>
+            </label>
+
+-->
