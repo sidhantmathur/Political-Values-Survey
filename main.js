@@ -70,6 +70,12 @@ function submitQuiz() {
         econ ++;
     }
 
+    if (rent === "A") {
+        econ --;
+    } else if (rent === "B") {
+        econ ++;
+    }
+
     if (gaym === "A") {
         soci++;
     } else if (gaym === "B") {
